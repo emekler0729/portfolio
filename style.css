@@ -47,7 +47,7 @@
     color: var(--dark) !important;
     text-decoration: none;
 }
-/* .link-dark:hover {
+.link-dark:hover {
     color: var(--primary) !important;
     text-decoration: underline;
-} */
+}
