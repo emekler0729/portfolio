@@ -42,6 +42,9 @@
 .text-light {
     color: var(--light) !important;
 }
+.text-primary {
+    color: var(--primary) !important;
+}
 .bg-dark {
     background-color: var(--dark) !important;
 }
