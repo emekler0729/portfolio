@@ -26,6 +26,11 @@
     }
 }
 
+.services {
+    color: var(--white);
+    background-color: var(--light)
+}
+
 .footer__icon {
     max-height: 30px;
 }
