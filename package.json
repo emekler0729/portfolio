@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Page",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass --no-source-map --watch sass:styles",
+    "make-sass": "sass --no-source-map sass:styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emekler0729/portfolio.git"
+  },
+  "author": "Eduard Mekler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emekler0729/portfolio/issues"
+  },
+  "homepage": "https://github.com/emekler0729/portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.38.1"
+  }
+}
