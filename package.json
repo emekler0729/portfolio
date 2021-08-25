@@ -19,5 +19,8 @@
   "homepage": "https://github.com/emekler0729/portfolio#readme",
   "devDependencies": {
     "sass": "^1.38.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0"
   }
 }

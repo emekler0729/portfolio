@@ -1,0 +1,108 @@
+@import 'custom.scss';
+
+@media (min-width: 768px) {
+    .header {
+        margin-top: 100px !important;
+    }
+}
+
+
+p, h1, h2, h3 {
+    @extend .text-dark;
+}
+
+.container {
+    max-width: 825px;
+}
+
+.header {
+    @extend .text-center, .text-md-start, .pb-5;
+    // @extend .my-5, .my-md-0;
+
+    &__left-column {
+        @extend .col-md-8, .order-md-1, .order-2;
+    }
+
+    &__right-column {
+        @extend .col-md-4, .order-md-2, .order-1, .my-5, .my-md-0;
+    }
+
+    &__title {
+        @extend .display-6, .text-dark, .mb-4;
+    }
+
+    &__img {
+        @extend .img-thumbnail, .rounded-circle;
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header__img {
+        max-height: 200px;
+    }
+}
+
+@mixin section-title {
+    @extend .py-3, .text-center, .text-md-start;
+}
+
+@mixin section-row {
+    @extend .mb-4, .mb-md-3, .py-1, .py-md-4;
+}
+
+.services {
+    @extend .bg-light;
+
+    .row {
+        @include section-row;
+    }
+
+    &__title {
+        @include section-title;
+        @extend .text-white;
+    }
+}
+
+@mixin year-badge($color) {
+    @extend .badge, .rounded-pill, .px-3;
+    background-color: $color;
+}
+
+.projects {
+    @extend .mb-5;
+
+    &__title {
+        @include section-title;
+    }
+
+    &__left-column {
+        @extend .col-md-4, .d-flex, .align-items-center;
+    }
+
+    &__img {
+        @extend .img-fluid, .rounded, .mb-2, .mb-md-0;
+    }
+
+    &__row {
+        @include section-row;
+        @extend .row, .border-bottom;
+    }
+
+    &__year {
+        @include year-badge($dark);
+    }
+}
+
+.footer__icon {
+    max-height: 30px;
+}
+
+.link-dark {
+    text-decoration: none;
+
+    &:hover {
+        color: $primary;
+        text-decoration: underline;
+    }
+}
